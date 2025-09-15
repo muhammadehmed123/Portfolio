@@ -32,18 +32,17 @@ const About = () => {
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+  <p className="font-black text-eerieBlack text-[56px] tracking-wider uppercase mb-2 text-center">INTRODUCTION</p>
+  <h2 className={styles.sectionHeadText + ' font-semibold'}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
       >
-        As a DevOps practitioner, I am passionate about bridging the gap between
-        development and operations, implementing automation, continuous
-        integration, and delivery practices to optimize software development
-        processes and ensure seamless, reliable, and scalable deployments.
+        <span className="block font-bold text-[22px] text-eerieBlack mb-2">DevOps Engineer</span>
+        🚀 Passionate DevOps Engineer specializing in Kubernetes orchestration, containerization with Docker, and infrastructure automation using Ansible. Expert in building robust CI/CD pipelines with ArgoCD, delivering scalable cloud solutions that ensure high availability, security, and performance.<br /><br />
+        💡 Transforming development workflows through modern DevOps practices - bridging development and operations to accelerate software delivery while maintaining reliability and security standards.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

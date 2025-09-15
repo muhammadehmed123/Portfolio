@@ -16,8 +16,26 @@ import {
   practitioner,
   foundation,
   azure,
-  deloitte
+  deloitte,
+  aws,
+  kubernetes,
+  linux,
+  jenkins,
+  grafana,
+  prometheus,
+  terraform,
+  figma,
+  nodejs,
+  reactjs,
+  redux,
+  tailwind,
+  typescript,
+  graphql,
+  rubyrails
 } from "../assets";
+import { FaAws, FaJenkins, FaLinux, FaDocker } from "react-icons/fa";
+import { AiOutlineKubernetes } from "react-icons/ai";
+import ansible from '../assets/tech/ansible.png';
 
 export const navLinks = [
   {
@@ -25,8 +43,20 @@ export const navLinks = [
     title: 'About',
   },
   {
+    id: 'skills',
+    title: 'Skills',
+  },
+  {
     id: 'projects',
     title: 'Projects',
+  },
+  {
+    id: 'work-experience',
+    title: 'Work Experience',
+  },
+  {
+    id: 'education-certifications',
+    title: 'Education & Certifications',
   },
   {
     id: 'contact',
@@ -55,88 +85,57 @@ const services = [
 
 const technologies = [
   {
-    name: 'HTML 5',
-    icon: html,
+    name: 'Jenkins',
+    icon: jenkins,
   },
   {
-    name: 'CSS 3',
-    icon: css,
+    name: 'Kubernetes',
+    icon: kubernetes,
   },
   {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  // {
-  //   name: 'TypeScript',
-  //   icon: typescript,
-  // },
-  // {
-  //   name: 'React JS',
-  //   icon: reactjs,
-  // },
-  // {
-  //   name: 'Redux Toolkit',
-  //   icon: redux,
-  // },
-  // {
-  //   name: 'Tailwind CSS',
-  //   icon: tailwind,
-  // },
-  // {
-  //   name: 'Node JS',
-  //   icon: nodejs,
-  // },
-  // {
-  //   name: 'Rails',
-  //   icon: rubyrails,
-  // },
-  // {
-  //   name: 'graphql',
-  //   icon: graphql,
-  // },
-  {
-    name: 'postgresql',
-    icon: postgresql,
-  },
-  {
-    name: 'git',
-    icon: git,
-  },
-  {
-    name: 'docker',
+    name: 'Docker',
     icon: docker,
+  },
+  {
+    name: 'Linux',
+    icon: linux,
+  },
+  {
+    name: 'AWS',
+    icon: aws,
+  },
+  {
+    name: 'Ansible',
+    icon: ansible,
+  },
+  {
+    name: 'Grafana',
+    icon: grafana,
+  },
+  {
+    name: 'Prometheus',
+    icon: prometheus,
+  },
+  {
+    name: 'Terraform',
+    icon: terraform,
   },
 ];
 
 const experiences = [
   {
-    title: 'DevOps Engineer',
-    company_name: 'Ellocent Labs',
-    icon: coverhunt,
+  title: 'DevOps Engineer',
+    company_name: 'Coventech',
+    icon: coverhunt, // You can update this to a Coventech logo if available
     iconBg: '#333333',
-    date: 'May 2022 - Present',
-  },
-  {
-    title: 'Softwaree Engineer associate',
-    company_name: 'Xenonstack',
-    icon: microverse,
-    iconBg: '#333333',
-    date: 'Jan 2022 - Apr 2022',
-  },
-  {
-    title: 'Clound Engineer Intern',
-    company_name: 'Simba Developers',
-    icon: kelhel,
-    iconBg: '#333333',
-    date: 'June 2021 - Dec 2021',
-  },
-  {
-    title: 'B.tech CSE',
-    company_name: 'GNA University, Phagwara',
-    icon: dcc,
-    iconBg: '#333333',
-    date: 'July 2018 - June 2022',
-  },
+    date: 'June 2025 – Present',
+    points: [
+      'Implemented CI/CD Pipelines: Built CI/CD pipelines using Jenkins and GitHub Actions to automate production deployments, reducing deployment time by 60% and minimizing manual errors.',
+      'AWS Infrastructure Optimization: Optimized AWS infrastructure to reduce cloud costs by 45%, improving resource utilization and system performance.',
+      'Docker Multi-Container Management: Managed and deployed multi-container applications using Docker Compose, streamlining microservices orchestration and improving scalability across environments.',
+      'EC2 to Lambda Migration: Migrated application infrastructure from AWS EC2 to AWS Lambda with API Gateway, integrated S3 for asset storage, configured CloudFront for global content delivery, and transitioned database to Neon, improving scalability, reducing operational overhead, and lowering hosting costs.'
+    ]
+  }
 ];
 
 const projects = [

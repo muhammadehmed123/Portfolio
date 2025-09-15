@@ -1,3 +1,11 @@
+import ansible from './tech/ansible.png';
+import grafana from './tech/grafana.png';
+import prometheus from './tech/prometheus.png';
+import terraform from './tech/terraform.png';
+import jenkins from './tech/jenkins.png';
+import kubernetes from './tech/kubenetes.png';
+import aws from './tech/aws.png'; // Make sure this is the new image you provided
+import linux from './tech/linux.png'; // Make sure this is the new image you provided
 import bwmap from './backgrounds/bw-map.jpeg';
 import whiteabstract from './backgrounds/white-abstract.png';
 import worldmap from './backgrounds/world-map.png';
@@ -40,16 +48,24 @@ import microverse from './company/microverse.png';
 
 import foundation from "./certificates/aws-academy-cloud-foundations.png";
 import practitioner from "./certificates/aws-certified-cloud-practitioner.png";
-import azure from "./certificates/azure.png";
+import azure from './tech/azure.png';
 import deloitte from "./certificates/deloitte.png";
 
 
 export {
+  ansible,
+  jenkins,
+  kubernetes,
+  aws,
+  linux,
   foundation,
   practitioner,
   azure,
   deloitte,
   bwmap,  
+  grafana,
+  prometheus,
+  terraform,
   whiteabstract,
   worldmap,
   logo,  
