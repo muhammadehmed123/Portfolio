@@ -37,6 +37,15 @@
   color-scheme: dark;
 }
 
+/* Custom placeholder styling */
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af !important;
+  opacity: 0.8 !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.01em !important;
+}
+
 .nav-links::after {
   content: '';
   display: block;

@@ -22,8 +22,8 @@ const CertificateCard = ({
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className={`relative ${
         active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
-      } flex items-center justify-center min-w-[170px] 
-      h-[420px] cursor-pointer card-shadow`}
+      } flex items-center justify-center min-w-[120px] sm:min-w-[150px] lg:min-w-[170px] 
+      h-[300px] sm:h-[360px] lg:h-[420px] cursor-pointer card-shadow`}
       onClick={() => handleClick(id)}
     >
       <div
@@ -34,7 +34,7 @@ const CertificateCard = ({
       <img
         src={image}
         alt={name}
-        className="absolute h-full object-fit rounded-[24px]"
+        className="absolute h-full w-full object-cover rounded-[24px]"
       />
 
       {active !== id ? (
@@ -92,15 +92,13 @@ const CertificateCard = ({
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
               onClick={() => window.open(demo, "_blank")}
-              onMouseOver={() => {
-                document
-                  .querySelector(".btn-icon")
-                  .setAttribute("src", pineappleHover);
+              onMouseOver={(e) => {
+                const icon = e.currentTarget.querySelector(".btn-icon");
+                if (icon) icon.setAttribute("src", pineappleHover);
               }}
-              onMouseOut={() => {
-                document
-                  .querySelector(".btn-icon")
-                  .setAttribute("src", pineapple);
+              onMouseOut={(e) => {
+                const icon = e.currentTarget.querySelector(".btn-icon");
+                if (icon) icon.setAttribute("src", pineapple);
               }}
             >
               <img
@@ -131,7 +129,7 @@ const Certificates = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
+          className="mt-4 text-taupe text-[14px] sm:text-[16px] md:text-[18px] max-w-3xl leading-[24px] sm:leading-[28px] md:leading-[30px] px-4 sm:px-0"
         >
           <span className="font-semibold">Certifications:</span> As a seasoned DevOps professional with
           over a 1.5 - 2 years of experience, I proudly showcase my achievements,

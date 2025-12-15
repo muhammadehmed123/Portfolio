@@ -124,8 +124,23 @@ const technologies = [
 
 const experiences = [
   {
-  title: 'DevOps Engineer',
+    title: 'DevOps Engineer Freelance',
+    company_name: 'Upwork',
+    location: 'Remote',
+    icon: coverhunt, // Using placeholder icon - you can add Upwork logo if available
+    iconBg: '#14A800',
+    date: '2024 – Present',
+    points: [
+      'Delivered DevOps solutions for multiple clients across various industries, focusing on cloud infrastructure and automation.',
+      'Implemented CI/CD pipelines and containerization strategies to improve deployment efficiency.',
+      'Provided consulting services on cloud architecture, infrastructure as code, and DevOps best practices.',
+      'Managed and optimized cloud resources for clients, ensuring cost-effectiveness and high availability.'
+    ]
+  },
+  {
+    title: 'DevOps Engineer',
     company_name: 'Coventech',
+    location: '',
     icon: coverhunt, // You can update this to a Coventech logo if available
     iconBg: '#333333',
     date: 'June 2025 – Present',

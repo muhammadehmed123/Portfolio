@@ -32,13 +32,13 @@ const Hero = () => {
             <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
           </div>
           <div>
-            <h1 className={`${styles.heroHeadText} font-poppins font-bold uppercase text-eerieBlack`}>
+            <h1 className={`${styles.heroHeadText} font-poppins font-bold uppercase text-eerieBlack px-4 sm:px-0`}>
               Hi, I'm{' '}
-              <span className="sm:text-[5rem] text-[3rem] font-bold uppercase ml-2">
+              <span className="sm:text-[5rem] text-[2.5rem] sm:text-[3rem] md:text-[4rem] lg:text-[5rem] font-bold uppercase ml-0 sm:ml-2">
                 Muhammad Ahmed
               </span>
             </h1>
-            <p className={`${styles.heroSubText} mt-2 text-gray-500`}>
+            <p className={`${styles.heroSubText} mt-2 text-gray-500 px-4 sm:px-0`}>
               As a DevOps enthusiast, <br className="sm:block hidden" />I strive
               to streamline software development and operations by leveraging
               automation, continuous integration, and deployment to deliver

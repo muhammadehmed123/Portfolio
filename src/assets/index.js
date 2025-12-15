@@ -6,9 +6,11 @@ import jenkins from './tech/jenkins.png';
 import kubernetes from './tech/kubenetes.png';
 import aws from './tech/aws.png'; // Make sure this is the new image you provided
 import linux from './tech/linux.png'; // Make sure this is the new image you provided
+import azure from './tech/azure.png';
 import bwmap from './backgrounds/bw-map.jpeg';
 import whiteabstract from './backgrounds/white-abstract.png';
 import worldmap from './backgrounds/world-map.png';
+import devopsBg from './backgrounds/devops.png';
 
 import logo from './logo/logo-black.png';
 
@@ -48,7 +50,6 @@ import microverse from './company/microverse.png';
 
 import foundation from "./certificates/aws-academy-cloud-foundations.png";
 import practitioner from "./certificates/aws-certified-cloud-practitioner.png";
-import azure from './tech/azure.png';
 import deloitte from "./certificates/deloitte.png";
 
 
@@ -58,9 +59,9 @@ export {
   kubernetes,
   aws,
   linux,
+  azure,
   foundation,
   practitioner,
-  azure,
   deloitte,
   bwmap,  
   grafana,
@@ -68,6 +69,7 @@ export {
   terraform,
   whiteabstract,
   worldmap,
+  devopsBg,
   logo,  
   backend,
   ux,

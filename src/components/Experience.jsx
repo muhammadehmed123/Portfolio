@@ -39,13 +39,13 @@ const ExperienceCard = ({ experience }) => (
       </div>
     }>
     <div>
-      <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
+      <h3 className="text-jetLight text-[18px] sm:text-[22px] md:text-[24px] font-bold font-beckman tracking-[1px] sm:tracking-[2px]">
         {experience.title}
       </h3>
       <p
-        className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
+        className="text-taupe text-[18px] sm:text-[20px] md:text-[22px] font-semibold font-overcameBold tracking-[1px]"
         style={{ margin: 0 }}>
-        {experience.company_name}
+        {experience.company_name}{experience.location ? ` — ${experience.location}` : ''}
       </p>
     </div>
   </VerticalTimelineElement>
